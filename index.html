@@ -1,42 +1,32 @@
-04.25 12:31 AM
+04.25 1:14 AM
 <!DOCTYPE html>
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>আমার অনলাইন শপ - সেরা পোশাকের সংগ্রহ</title>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap" rel="stylesheet">
+    <title>RK Roni Fashion Shop</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Hind Siliguri', sans-serif; }
-        body { background-color: #f8f9fa; color: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f4f9; color: #333; }
+        header { background: #ff4757; color: white; padding: 25px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 15px; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .product-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; border: 1px solid #ddd; }
         
-        header { background: #ff4757; color: white; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        header h1 { font-size: 1.8rem; }
-
-        .container { max-width: 1100px; margin: 30px auto; padding: 0 15px; }
+        /* ছবি আপলোড করলে এখানে ছবির নাম দেবেন */
+        .product-img { width: 100%; height: 300px; object-fit: cover; background: #eee; }
         
-        /* Product Grid */
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
-        
-        .product-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s; text-align: center; padding-bottom: 20px; border: 1px solid #eee; }
-        .product-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
-        
-        .product-img { width: 100%; height: 250px; background: #ddd; display: flex; align-items: center; justify-content: center; color: #777; font-size: 0.9rem; }
-        
-        .product-info { padding: 15px; }
-        .product-name { font-size: 1.3rem; margin-bottom: 8px; color: #2f3542; }
-        .product-price { font-size: 1.2rem; color: #ff4757; font-weight: bold; margin-bottom: 15px; }
-
-        .whatsapp-btn { background: #25D366; color: white; text-decoration: none; padding: 10px 20px; border-radius: 50px; font-weight: bold; display: inline-flex; align-items: center; gap: 8px; transition: 0.3s; }
-        .whatsapp-btn:hover { background: #128C7E; }
-
-        footer { text-align: center; padding: 40px; color: #777; border-top: 1px solid #ddd; margin-top: 50px; }
+        .info { padding: 15px; }
+        .price { color: #ff4757; font-size: 22px; font-weight: bold; margin: 10px 0; }
+        .whatsapp-btn { background: #25D366; color: white; text-decoration: none; padding: 12px 20px; border-radius: 50px; display: inline-block; font-weight: bold; transition: 0.3s; }
+        .whatsapp-btn:hover { background: #1ebd57; transform: scale(1.05); }
+        footer { margin-top: 50px; padding: 20px; background: #2f3542; color: white; text-align: center; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>স্বপ্নীল ফ্যাশন হাউস</h1>
+    <h1>RK Roni Fashion Shop</h1>
     <p>সেরা মানের প্রিমিয়াম পাঞ্জাবি ও পোশাকের সংগ্রহ</p>
 </header>
 
@@ -44,4 +34,30 @@
     <div class="product-grid">
         
         <div class="product-card">
-            <div class="product-img">পো
+            <img src="p1.jpg" class="product-img" alt="পাঞ্জাবি" onerror="this.src='https://via.placeholder.com/300x400?text=RK+Roni+Fashion'">
+            <div class="info">
+                <h3>প্রিমিয়াম ব্ল্যাক পাঞ্জাবি</h3>
+                <p class="price">৳ ১,৫৫০</p>
+                <a href="https://wa.me/8801700000000?text=আমি এই পাঞ্জাবিটি অর্ডার করতে চাই" class="whatsapp-btn">WhatsApp-এ অর্ডার দিন</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="p2.jpg" class="product-img" alt="পাঞ্জাবি" onerror="this.src='https://via.placeholder.com/300x400?text=RK+Roni+Fashion'">
+            <div class="info">
+                <h3>রয়্যাল হোয়াইট পাঞ্জাবি</h3>
+                <p class="price">৳ ১,৬০০</p>
+                <a href="https://wa.me/8801700000000?text=আমি এই সাদা পাঞ্জাবিটি অর্ডার করতে চাই" class="whatsapp-btn">WhatsApp-এ অর্ডার দিন</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>&copy; ২০২৬ | RK Roni Fashion Shop | দোহর, নবাবগঞ্জ</p>
+</footer>
+
+</body>
+</html>
+
